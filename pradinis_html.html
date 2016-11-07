@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://npmcdn.com/particlesjs@1.0.2/dist/particles.min.js"></script>
+    <style>
+        #toolbar {
+            position: absolute;
+            top: 200px;
+            width: 100%;
+            height: 50px;
+            border: 15px dotted #ff9800;
+            /*background-color: #ff9800;*/
+        }
+
+        .naujaKlase1 {
+            font-style: italic;
+            background-color: red;
+        };
+
+html, body {
+          margin: 0;
+        }
+        #myCanvas {
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          z-index: 0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+  <canvas id="myCanvas"></canvas>
+    <div id="toolbar"></div>
+    <img id="headerImg" src="https://pixabay.com/static/uploads/photo/2016/07/12/08/18/tree-1511604_960_720.png" alt="header" />
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+    <hr>
+    <p>Donec id mi sed orci lobortis rutrum. Nam suscipit augue eu felis congue malesuada. In dui dolor, ultrices ut dictum non, mollis at sapien.</p>
+    <div id="superDiv">
+        <p id="child">Integer auctor magna et orci iaculis maximus. Quisque euismod lectus quam, eget fringilla nulla ornare a. In hac habitasse platea dictumst. Proin venenatis pretium tincidunt. Morbi rhoncus vel neque vel porttitor.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+    </div>
+    <h2>Mauris id faucibus elit, a efficitur sem</h2>
+    <img src="https://pixabay.com/static/uploads/photo/2016/09/12/18/27/parsley-1665402_960_720.jpg" alt="broccoli" width="300px" />
+    <img src="https://pixabay.com/static/uploads/photo/2016/06/25/12/48/fashion-1478810_960_720.jpg" alt="bag" width="300px" />
+    <img src="https://pixabay.com/static/uploads/photo/2016/08/29/22/29/cobweb-1629374_960_720.jpg" alt="flower" width="300px" />
+    <br>
+    <br>
+    <button>Buy now</button>
+
+    <a id="linkas" href="http://eloquentjavascript.net/"><h2>Spausk čia</h2></a>
+
+    <table border="1">
+        <tr>
+            <td>viens</td>
+            <td>viens</td>
+            <td>viens</td>
+        </tr>
+        <tr>
+            <td>du</td>
+            <td>du</td>
+            <td>du</td>
+        </tr>
+        <tr>
+            <td>trys</td>
+            <td>trys</td>
+            <td>trys</td>
+        </tr>
+    </table>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+    <hr>
+    <p>Donec id mi sed orci lobortis rutrum. Nam suscipit augue eu felis congue malesuada. In dui dolor, ultrices ut dictum non, mollis at sapien.</p>
+    <div>
+        <p>Integer auctor magna et orci iaculis maximus. Quisque euismod lectus quam, eget fringilla nulla ornare a. In hac habitasse platea dictumst. Proin venenatis pretium tincidunt. Morbi rhoncus vel neque vel porttitor.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+    </div>
+    <h2>Mauris id faucibus elit, a efficitur sem</h2>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+    <hr>
+    <p>Donec id mi sed orci lobortis rutrum. Nam suscipit augue eu felis congue malesuada. In dui dolor, ultrices ut dictum non, mollis at sapien.</p>
+    <div>
+        <p>Integer auctor magna et orci iaculis maximus. Quisque euismod lectus quam, eget fringilla nulla ornare a. In hac habitasse platea dictumst. Proin venenatis pretium tincidunt. Morbi rhoncus vel neque vel porttitor.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+    </div>
+    <h2>Mauris id faucibus elit, a efficitur sem</h2>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+    <hr>
+    <p>Donec id mi sed orci lobortis rutrum. Nam suscipit augue eu felis congue malesuada. In dui dolor, ultrices ut dictum non, mollis at sapien.</p>
+    <div>
+        <p>Integer auctor magna et orci iaculis maximus. Quisque euismod lectus quam, eget fringilla nulla ornare a. In hac habitasse platea dictumst. Proin venenatis pretium tincidunt. Morbi rhoncus vel neque vel porttitor.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+        <p>Sed id dolor quis mauris iaculis varius. Curabitur a nulla nec tortor cursus fringilla a et neque. Phasellus ligula velit, vestibulum ac dui sed, lacinia euismod mi.</p>
+    </div>
+    <h2>Mauris id faucibus elit, a efficitur sem</h2>
+
+    <script>
+        //*window.onload() = function(){}
+        window.addEventListener("DOMContentLoaded", function() {
+
+            window.addEventListener("scroll", function() {
+                document.getElementById("toolbar").style.top = Math.max(200, window.scrollY) + "px";
+                //*console.log(window.scrollY);
+            })
+        })
+
+        window.addEventListener("resize", function() {
+
+            document.getElementById("headerImg").style.height = window.innerHeight - 170 + "px";
+            document.getElementById("headerImg").style.width = window.innerWidth - 170 + "px";
+
+        })
+
+
+
+
+
+        //document.getElementById("superDiv");
+        //document.getElementsByTagName("p")[4];
+        var kiekP = document.getElementsByTagName("p").length;
+        //document.getElementsByClassName("klasesPavadinimas")[1];
+        console.log(kiekP);
+
+        var newParagraph = document.createElement("p");
+        document.getElementById("superDiv").appendChild(newParagraph);
+        //newParagraph.textContent = "as esu naujas paragrafas";
+        newParagraph.innerHTML = "<span>as esu span</span>";
+        var pirmasP = document.getElementsByTagName("p")[0];
+        document.body.insertBefore(newParagraph, pirmasP);
+
+        var parent = document.getElementById("superDiv");
+        var child = document.getElementById("child");
+        parent.replaceChild(newParagraph, child);
+
+
+
+        var allTr = document.getElementsByTagName("tr");
+        var newTd;
+
+        for (var i = 0; i < allTr.length; i++) {
+            newTd = document.createElement("td");
+            newTd.textContent = i;
+            allTr[i].appendChild(newTd);
+        }
+
+        document.getElementsByTagName("h1")[0].style.fontSize = "25px";
+
+        //document.getElementsByTagName("p")[0].style.color = "blue";
+
+        var paragrafai = document.getElementsByTagName("p");
+
+        for (var i = 0; i < paragrafai.length; i++) {
+            paragrafai[i].style.color = "blue";
+        }
+
+        paragrafai[1].classList.add("naujaKlase");
+        paragrafai[1].id = "naujasId";
+
+
+
+
+        paragrafai[2].classList.add("naujaKlase1");
+        var pirmas = document.getElementsByClassName("naujaKlase1")[0];
+        pirmas.id = "naujasId1";
+        paragrafai[2].style.color = "black";
+
+        /*setTimeout(function() {
+          paragrafai[2].classList.remove("naujaKlase1");
+        }, 6000)*/
+
+        setInterval(function() {
+            paragrafai[2].classList.toggle("naujaKlase1");
+        }, 6000)
+
+
+
+
+
+        document.getElementById("linkas").setAttribute("href", "http://www.delfi.lt");
+        document.getElementById("linkas").setAttribute("target", "_blank");
+
+
+        document.getElementsByTagName("img")[1].setAttribute("src", "https://pixabay.com/static/uploads/photo/2016/07/12/08/18/tree-1511604_960_720.png");
+
+
+
+        //var spalvos = ["yellow","green","red",];
+        //var i = 0;
+
+        //setInterval(function(){
+        //document.getElementsByTagName("p")[3].className = spalvos[i];
+        //document.getElementsByTagName("p")[3].style.color = spalvos[i];
+        //i++;
+        //if (i > spalvos.length - 1){
+        //  i = 0;
+        //}
+        //},3000)
+
+
+        var kuriamTagus = function(tag, text) {
+            var element = document.createElement(tag);
+            var container = document.getElementsByTagName("body")[0];
+            container.appendChild(element);
+            element.textContent = text;
+        }
+
+
+        kuriamTagus("h1", "tekstasbbbb");
+        kuriamTagus("p", "tekstasddddd");
+        kuriamTagus("h5", "tekstaskkkkk");
+
+
+        var kuriamTagus2 = function(tag, source) {
+            var element = document.createElement(tag);
+            var container = document.getElementsByTagName("body")[0];
+            container.appendChild(element);
+            element.setAttribute("src", source);
+        }
+        kuriamTagus2("img", "https://pixabay.com/static/uploads/photo/2016/07/12/08/18/tree-1511604_960_720.png");
+
+
+        var paveiksleliai = document.getElementsByTagName("img");
+
+        if (paveiksleliai.length > 2) {
+            for (var i = 0; i < paveiksleliai.length; i += 2)
+                paveiksleliai[i].style.border = "7px solid green";
+        } else {
+            var newImage = document.createElement("img");
+            newImage.setAttribute("src", "https://pixabay.com/static/uploads/photo/2016/07/12/08/18/tree-1511604_960_720.png");
+            newImage.setAttribute("alt", "natos");
+            document.getElementById("superDiv").appendChild(newImage);
+        }
+
+
+        ///////////////////////Events///////////////
+
+        function test() {
+            alert("test");
+        }
+
+        document.getElementsByTagName("button")[0].addEventListener("mouseleave", function() {
+            alert("Ka yra?");
+        });
+
+        document.addEventListener("keydown", function(event) {
+            //*console.log(event.keyCode);
+            if (event.keyCode == 65) {
+                document.body.style.backgroundColor = "black";
+            }
+        });
+        document.addEventListener("keyup", function(event) {
+            //*console.log(event.keyCode);
+            if (event.keyCode == 65) {
+                document.body.style.backgroundColor = "";
+            }
+        });
+
+        //*event.parentDefault();
+
+
+        ///jquery///
+
+        $(document).ready(function() {
+            $("#toolbar").click(function() {
+                $("#toolbar").fadeOut(1000);
+            })
+
+
+            $("button").click(function() {
+                $("#toolbar").fadeToggle(1000);
+            })
+        })
+
+        window.onload = function() {
+          Particles.init({
+            selector: '#myCanvas',
+            color: '#0f9976',
+            connectParticles: true,
+            speed: 4,
+            maxParticles: 300
+          });
+        };
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
